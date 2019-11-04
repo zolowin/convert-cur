@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+
+<body>
+    <h3>Amount</h3>
+    <input type="text" number="amount" id="a">
+    <h3>From currency</h3>
+    <select name="from currency" id="currency">;
+        <option value="VND">Việt Nam Đồng</option>
+        <option value="USD">Đô la Mỹ</option>
+    </select>
+    <h3>To currency</h3>
+    <select name="to currency" id="to">;
+        <option value="VND">Việt Nam Đồng</option>
+        <option value="USD">Đô la Mỹ</option>
+    </select>
+    <button type="button" onclick="convertCurency(); id='d'">Convert</button>
+    <script>
+
+        function convertCurency() {
+            var x = document.getElementById('a').value;
+            if (currency.value === "USD" && to.value === "VND") {
+                alert(x * 23000 + " vnd");
+            }
+            else if (currency.value === " VND" && to.value === "USD")
+            alert(x / 23000 + "usd");
+            else if (currency.value=== to.value){
+                alert(x + '' + currency.value);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
